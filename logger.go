@@ -20,7 +20,7 @@ var (
 	DebugLogger *log.Logger
 )
 
-func InitLogger(inOperatingSystem string, inFileName) {
+func InitLogger(inOperatingSystem string, inFileName string) {
 
 	logFileName := inFileName
 
