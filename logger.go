@@ -20,9 +20,9 @@ var (
 	DebugLogger *log.Logger
 )
 
-func InitLogger(inOperatingSystem string) {
+func InitLogger(inOperatingSystem string, inFileName) {
 
-	logFileName := LINUX_LOGNAME
+	logFileName := inFileName
 
 	fmt.Println("Log is written to " + logFileName)
 
