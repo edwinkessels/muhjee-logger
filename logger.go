@@ -8,10 +8,6 @@ import (
 	"strings"
 )
 
-const (
-	WINDOWS_LOGNAME = "c:\\temp\\Muhjee_GoEngine.log"
-	LINUX_LOGNAME   = "/tmp/Muhjee_GoEngine.log"
-)
 
 var (
 	//WarningLogger *log.Logger
@@ -20,7 +16,7 @@ var (
 	DebugLogger *log.Logger
 )
 
-func InitLogger(inOperatingSystem string, inFileName string) {
+func InitLogger(inFileName string) {
 
 	logFileName := inFileName
 
